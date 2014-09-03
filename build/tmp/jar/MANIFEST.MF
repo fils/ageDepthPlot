@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Main-Class: ADPApp
-Implementation-Title: Gradle Quickstart
-Implementation-Version: 1.0
+Implementation-Title: CHRONOS Age-Depth Plot
+Implementation-Version: 2.0
 
