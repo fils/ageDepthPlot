@@ -7,8 +7,19 @@
  * user guide available at http://gradle.org/docs/2.0/userguide/tutorial_java_projects.html
  */
 
+buildscript {
+	repositories { jcenter() }
+	dependencies {
+		classpath 'com.github.jengelman.gradle.plugins:shadow:1.1.1'
+	}
+}
+
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+
+// Apply the shadow plugin to create a FatJAR that includes all dependencies
+apply plugin: 'com.github.johnrengelman.shadow'
 
 sourceCompatibility = 1.7
 version = '2.0'
